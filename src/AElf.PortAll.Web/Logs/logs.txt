@@ -1,0 +1,494 @@
+2021-07-16 16:17:14.079 +08:00 [INF] Starting web host.
+2021-07-16 16:17:23.098 +08:00 [INF] User profile is available. Using '/Users/eanzhao/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-07-16 16:17:23.803 +08:00 [INF] Loaded ABP modules:
+2021-07-16 16:17:23.803 +08:00 [INF] - AElf.PortAll.Web.PortAllWebModule
+2021-07-16 16:17:23.803 +08:00 [INF]   - AElf.PortAll.PortAllHttpApiModule
+2021-07-16 16:17:23.803 +08:00 [INF]     - AElf.PortAll.PortAllApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]       - AElf.PortAll.PortAllDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.BackgroundJobs.AbpBackgroundJobsDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2021-07-16 16:17:23.803 +08:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-07-16 16:17:23.803 +08:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2021-07-16 16:17:23.803 +08:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-07-16 16:17:23.803 +08:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2021-07-16 16:17:23.803 +08:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-07-16 16:17:23.803 +08:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-07-16 16:17:23.803 +08:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-07-16 16:17:23.803 +08:00 [INF]       - Volo.Abp.Account.AbpAccountApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.Application.AbpDddApplicationModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.Domain.AbpDddDomainModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.Auditing.AbpAuditingModule
+2021-07-16 16:17:23.803 +08:00 [INF]                 - Volo.Abp.Json.AbpJsonModule
+2021-07-16 16:17:23.803 +08:00 [INF]                   - Volo.Abp.Timing.AbpTimingModule
+2021-07-16 16:17:23.803 +08:00 [INF]                 - Volo.Abp.Threading.AbpThreadingModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.Guids.AbpGuidsModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-07-16 16:17:23.803 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiModule
+2021-07-16 16:17:23.803 +08:00 [INF]       - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-07-16 16:17:23.803 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-07-16 16:17:23.803 +08:00 [INF]             - Volo.Abp.Http.AbpHttpModule
+2021-07-16 16:17:23.803 +08:00 [INF]               - Volo.Abp.Minify.AbpMinifyModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-07-16 16:17:23.803 +08:00 [INF]           - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-07-16 16:17:23.804 +08:00 [INF]           - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-07-16 16:17:23.804 +08:00 [INF]             - Volo.Abp.UI.AbpUiModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - AElf.PortAll.PortAllHttpApiClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.Account.AbpAccountHttpApiClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]         - Volo.Abp.Castle.AbpCastleCoreModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementHttpApiClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementHttpApiClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.AspNetCore.Authentication.OpenIdConnect.AbpAspNetCoreAuthenticationOpenIdConnectModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.AspNetCore.Authentication.OAuth.AbpAspNetCoreAuthenticationOAuthModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.Client.AbpAspNetCoreMvcClientModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.Client.AbpAspNetCoreMvcClientCommonModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-07-16 16:17:23.804 +08:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.Theme.Basic.AbpAspNetCoreMvcUiBasicThemeModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-07-16 16:17:23.804 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-07-16 16:17:23.804 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-07-16 16:17:23.804 +08:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.Caching.StackExchangeRedis.AbpCachingStackExchangeRedisModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.SettingManagement.Web.AbpSettingManagementWebModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.Http.Client.IdentityModel.Web.AbpHttpClientIdentityModelWebModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2021-07-16 16:17:23.804 +08:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.Identity.Web.AbpIdentityWebModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.PermissionManagement.Web.AbpPermissionManagementWebModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.TenantManagement.Web.AbpTenantManagementWebModule
+2021-07-16 16:17:23.804 +08:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementWebModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.AspNetCore.Serilog.AbpAspNetCoreSerilogModule
+2021-07-16 16:17:23.804 +08:00 [INF]   - Volo.Abp.Swashbuckle.AbpSwashbuckleModule
+2021-07-16 16:17:26.491 +08:00 [INF] Initialized all ABP modules.
+2021-07-16 16:17:26.675 +08:00 [WRN] The application is trying to access the ASP.NET Core developer certificate key. A prompt might appear to ask for permission to access the key. When that happens, select 'Always Allow' to grant 'dotnet' access to the certificate key in the future.
+2021-07-16 16:17:35.322 +08:00 [INF] Now listening on: https://localhost:44306
+2021-07-16 16:17:35.322 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-07-16 16:17:35.322 +08:00 [INF] Hosting environment: Development
+2021-07-16 16:17:35.322 +08:00 [INF] Content root path: /Users/eanzhao/Code/AElf.PortAll/src/AElf.PortAll.Web
+2021-07-16 16:17:46.551 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/ - -
+2021-07-16 16:17:56.949 +08:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 5s ago, v: 2.0.593.37019
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 5s ago, v: 2.0.593.37019
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(Object configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 823
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:17:58.606 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/ - -
+2021-07-16 16:17:59.672 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/ - -
+2021-07-16 16:17:59.830 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/ - -
+2021-07-16 16:18:00.000 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/ - -
+2021-07-16 16:18:07.072 +08:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 10s ago, v: 2.0.593.37019
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 10s ago, v: 2.0.593.37019
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(Object configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 823
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:07.132 +08:00 [WRN] The operation was canceled.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:07.135 +08:00 [WRN] The operation was canceled.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:07.138 +08:00 [WRN] The operation was canceled.
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:07.139 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Volo.Abp.Threading.SemaphoreSlimExtensions.LockAsync(SemaphoreSlim semaphoreSlim, CancellationToken cancellationToken)
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:07.139 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Volo.Abp.Threading.SemaphoreSlimExtensions.LockAsync(SemaphoreSlim semaphoreSlim, CancellationToken cancellationToken)
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:07.139 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Volo.Abp.Threading.SemaphoreSlimExtensions.LockAsync(SemaphoreSlim semaphoreSlim, CancellationToken cancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAndGetResultAsync[T](IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetResultAsync(Task task, Type resultType)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.<GetAsync>b__14_0()
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:07.139 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at Volo.Abp.Threading.SemaphoreSlimExtensions.LockAsync(SemaphoreSlim semaphoreSlim, CancellationToken cancellationToken)
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:07.182 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/ - - - 500 - text/html;+charset=utf-8 20630.6922ms
+2021-07-16 16:18:07.182 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/ - - - 500 - text/html;+charset=utf-8 7508.9164ms
+2021-07-16 16:18:07.182 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/ - - - 500 - text/html;+charset=utf-8 7351.4687ms
+2021-07-16 16:18:07.182 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/ - - - 500 - text/html;+charset=utf-8 8575.9063ms
+2021-07-16 16:18:17.251 +08:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 20s ago, v: 2.0.593.37019
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 20s ago, v: 2.0.593.37019
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(Object configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 823
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:17.254 +08:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 30s ago, v: 2.0.593.37019
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 30s ago, v: 2.0.593.37019
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(Object configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 823
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:17.281 +08:00 [INF] Start processing HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:17.283 +08:00 [INF] Sending HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:17.636 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAndGetResultAsync[T](IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetResultAsync(Task task, Type resultType)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.<GetAsync>b__14_0()
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:17.652 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/ - - - 500 - text/html;+charset=utf-8 17652.6531ms
+2021-07-16 16:18:18.330 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/favicon.ico - -
+2021-07-16 16:18:28.446 +08:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 31s ago, v: 2.0.593.37019
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 31s ago, v: 2.0.593.37019
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(Object configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 823
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:38.563 +08:00 [WRN] It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 41s ago, v: 2.0.593.37019
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on 127.0.0.1:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 0s ago, last-write: 0s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 41s ago, v: 2.0.593.37019
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(Object configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 823
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.ConnectAsync(CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Volo.Abp.Caching.DistributedCache`2.GetAsync(TCacheKey key, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+2021-07-16 16:18:38.563 +08:00 [INF] Start processing HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:38.563 +08:00 [INF] Sending HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:38.589 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAndGetResultAsync[T](IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetResultAsync(Task task, Type resultType)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.<GetAsync>b__14_0()
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:38.593 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/favicon.ico - - - 500 - text/plain 20263.5165ms
+2021-07-16 16:18:43.138 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/ - -
+2021-07-16 16:18:43.211 +08:00 [INF] Start processing HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:43.211 +08:00 [INF] Sending HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:43.233 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAndGetResultAsync[T](IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetResultAsync(Task task, Type resultType)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.<GetAsync>b__14_0()
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:43.239 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/ - - - 500 - text/html;+charset=utf-8 100.9519ms
+2021-07-16 16:18:43.819 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/favicon.ico - -
+2021-07-16 16:18:43.820 +08:00 [INF] Start processing HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:43.820 +08:00 [INF] Sending HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:43.841 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAndGetResultAsync[T](IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetResultAsync(Task task, Type resultType)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.<GetAsync>b__14_0()
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:43.843 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/favicon.ico - - - 500 - text/plain 24.7502ms
+2021-07-16 16:18:45.226 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/ - -
+2021-07-16 16:18:45.227 +08:00 [INF] Start processing HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:45.228 +08:00 [INF] Sending HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:45.253 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAndGetResultAsync[T](IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetResultAsync(Task task, Type resultType)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.<GetAsync>b__14_0()
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:45.261 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/ - - - 500 - text/html;+charset=utf-8 35.2158ms
+2021-07-16 16:18:45.611 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:44306/favicon.ico - -
+2021-07-16 16:18:45.613 +08:00 [INF] Start processing HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:45.613 +08:00 [INF] Sending HTTP request GET "https://localhost:44382/api/abp/api-definition"
+2021-07-16 16:18:45.637 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: The SSL connection could not be established, see inner exception.
+ ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid because of errors in the certificate chain: UntrustedRoot
+   at System.Net.Security.SslStream.SendAuthResetSignal(ProtocolToken message, ExceptionDispatchInfo exception)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.EstablishSslConnectionAsyncCore(Boolean async, Stream stream, SslClientAuthenticationOptions sslOptions, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttpConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.SendAsyncCore(HttpRequestMessage request, HttpCompletionOption completionOption, Boolean async, Boolean emitTelemetryStartStop, CancellationToken cancellationToken)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionFromServerAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionCache.GetAsync(String baseUrl, Func`1 factory)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.GetApiDescriptionAsync(HttpClient client, String baseUrl)
+   at Volo.Abp.Http.Client.DynamicProxying.ApiDescriptionFinder.FindActionAsync(HttpClient client, String baseUrl, Type serviceType, MethodInfo method)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.MakeRequestAndGetResultAsync[T](IAbpMethodInvocation invocation)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.GetResultAsync(Task task, Type resultType)
+   at Volo.Abp.Http.Client.DynamicProxying.DynamicHttpProxyInterceptor`1.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Castle.DynamicProxy.AsyncInterceptorBase.ProceedAsynchronous[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo)
+   at Volo.Abp.Castle.DynamicProxy.CastleAbpMethodInvocationAdapterWithReturnValue`1.ProceedAsync()
+   at Volo.Abp.Validation.ValidationInterceptor.InterceptAsync(IAbpMethodInvocation invocation)
+   at Volo.Abp.Castle.DynamicProxy.CastleAsyncAbpInterceptorAdapter`1.InterceptAsync[TResult](IInvocation invocation, IInvocationProceedInfo proceedInfo, Func`3 proceed)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.<GetAsync>b__14_0()
+   at Volo.Abp.Caching.DistributedCache`2.GetOrAddAsync(TCacheKey key, Func`1 factory, Func`1 optionsFactory, Nullable`1 hideErrors, Boolean considerUow, CancellationToken token)
+   at Volo.Abp.AspNetCore.Mvc.Client.MvcCachedApplicationConfigurationClient.GetAsync()
+   at Volo.Abp.AspNetCore.Mvc.Client.RemoteLanguageProvider.GetLanguagesAsync()
+   at Microsoft.AspNetCore.RequestLocalization.DefaultAbpRequestLocalizationOptionsProvider.GetLocalizationOptionsAsync()
+   at Microsoft.AspNetCore.RequestLocalization.AbpRequestLocalizationMiddleware.InvokeAsync(HttpContext context, RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.<>c__DisplayClass6_1.<<UseMiddlewareInterface>b__1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-07-16 16:18:45.639 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:44306/favicon.ico - - - 500 - text/plain 28.2340ms
+2021-07-16 16:18:52.997 +08:00 [INF] Application is shutting down...
+2021-07-16 16:26:07.015 +08:00 [INF] Starting web host.
+2021-07-16 16:26:08.405 +08:00 [INF] User profile is available. Using '/Users/eanzhao/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2021-07-16 16:26:54.116 +08:00 [INF] Application is shutting down...
