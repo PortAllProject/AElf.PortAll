@@ -3,7 +3,6 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using AElf.PortAll.Localization;
-using AElf.PortAll.MultiTenancy;
 using Volo.Abp.Account.Localization;
 using Volo.Abp.Identity.Web.Navigation;
 using Volo.Abp.SettingManagement.Web.Navigation;
@@ -49,15 +48,8 @@ namespace AElf.PortAll.Web.Menus
                     order: 0
                 )
             );
-            
-            if (MultiTenancyConsts.IsEnabled)
-            {
-                administration.SetSubItemOrder(TenantManagementMenuNames.GroupName, 1);
-            }
-            else
-            {
-                administration.TryRemoveMenuItem(TenantManagementMenuNames.GroupName);
-            }
+
+            administration.TryRemoveMenuItem(TenantManagementMenuNames.GroupName);
             
             administration.SetSubItemOrder(IdentityMenuNames.GroupName, 2);
             administration.SetSubItemOrder(SettingManagementMenuNames.GroupName, 3);

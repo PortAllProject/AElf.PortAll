@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AElf.PortAll.Queries;
+using Microsoft.EntityFrameworkCore;
 using AElf.PortAll.Users;
 using Volo.Abp.Data;
 using Volo.Abp.EntityFrameworkCore;
@@ -22,6 +23,8 @@ namespace AElf.PortAll.EntityFrameworkCore
     {
         public DbSet<AppUser> Users { get; set; }
 
+        public DbSet<Query> Queries { get; set; }
+
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside PortAllDbContextModelCreatingExtensions.ConfigurePortAll
          */
@@ -40,11 +43,9 @@ namespace AElf.PortAll.EntityFrameworkCore
 
             builder.Entity<AppUser>(b =>
             {
-                b.ToTable(AbpIdentityDbProperties.DbTablePrefix + "Users"); //Sharing the same table "AbpUsers" with the IdentityUser
-                
+                b.ToTable($"{AbpIdentityDbProperties.DbTablePrefix}Users");
                 b.ConfigureByConvention();
                 b.ConfigureAbpUser();
-
                 /* Configure mappings for your additional properties
                  * Also see the PortAllEfCoreEntityExtensionMappings class
                  */

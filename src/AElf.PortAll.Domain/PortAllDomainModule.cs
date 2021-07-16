@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using AElf.PortAll.MultiTenancy;
 using Volo.Abp.AuditLogging;
 using Volo.Abp.BackgroundJobs;
 using Volo.Abp.Emailing;
@@ -35,7 +34,7 @@ namespace AElf.PortAll
         {
             Configure<AbpMultiTenancyOptions>(options =>
             {
-                options.IsEnabled = MultiTenancyConsts.IsEnabled;
+                options.IsEnabled = false;
             });
 
 #if DEBUG

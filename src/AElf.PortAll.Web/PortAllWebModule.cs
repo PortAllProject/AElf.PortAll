@@ -8,7 +8,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using AElf.PortAll.Localization;
-using AElf.PortAll.MultiTenancy;
 using AElf.PortAll.Web.Menus;
 using StackExchange.Redis;
 using Microsoft.OpenApi.Models;
@@ -57,7 +56,7 @@ namespace AElf.PortAll.Web
         typeof(AbpTenantManagementWebModule),
         typeof(AbpAspNetCoreSerilogModule),
         typeof(AbpSwashbuckleModule)
-        )]
+    )]
     public class PortAllWebModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)
@@ -96,20 +95,14 @@ namespace AElf.PortAll.Web
             {
                 options.StyleBundles.Configure(
                     BasicThemeBundles.Styles.Global,
-                    bundle =>
-                    {
-                        bundle.AddFiles("/global-styles.css");
-                    }
+                    bundle => { bundle.AddFiles("/global-styles.css"); }
                 );
             });
         }
 
         private void ConfigureCache()
         {
-            Configure<AbpDistributedCacheOptions>(options =>
-            {
-                options.KeyPrefix = "PortAll:";
-            });
+            Configure<AbpDistributedCacheOptions>(options => { options.KeyPrefix = "PortAll:"; });
         }
 
         private void ConfigureUrls(IConfiguration configuration)
@@ -122,10 +115,7 @@ namespace AElf.PortAll.Web
 
         private void ConfigureMultiTenancy()
         {
-            Configure<AbpMultiTenancyOptions>(options =>
-            {
-                options.IsEnabled = MultiTenancyConsts.IsEnabled;
-            });
+            Configure<AbpMultiTenancyOptions>(options => { options.IsEnabled = false; });
         }
 
         private void ConfigureAuthentication(ServiceConfigurationContext context, IConfiguration configuration)
@@ -135,10 +125,7 @@ namespace AElf.PortAll.Web
                     options.DefaultScheme = "Cookies";
                     options.DefaultChallengeScheme = "oidc";
                 })
-                .AddCookie("Cookies", options =>
-                {
-                    options.ExpireTimeSpan = TimeSpan.FromDays(365);
-                })
+                .AddCookie("Cookies", options => { options.ExpireTimeSpan = TimeSpan.FromDays(365); })
                 .AddAbpOpenIdConnect("oidc", options =>
                 {
                     options.Authority = configuration["AuthServer:Authority"];
@@ -160,10 +147,7 @@ namespace AElf.PortAll.Web
 
         private void ConfigureAutoMapper()
         {
-            Configure<AbpAutoMapperOptions>(options =>
-            {
-                options.AddMaps<PortAllWebModule>();
-            });
+            Configure<AbpAutoMapperOptions>(options => { options.AddMaps<PortAllWebModule>(); });
         }
 
         private void ConfigureVirtualFileSystem(IWebHostEnvironment hostingEnvironment)
@@ -172,8 +156,12 @@ namespace AElf.PortAll.Web
             {
                 Configure<AbpVirtualFileSystemOptions>(options =>
                 {
-                    options.FileSets.ReplaceEmbeddedByPhysical<PortAllDomainSharedModule>(Path.Combine(hostingEnvironment.ContentRootPath, $"..{Path.DirectorySeparatorChar}AElf.PortAll.Domain"));
-                    options.FileSets.ReplaceEmbeddedByPhysical<PortAllApplicationContractsModule>(Path.Combine(hostingEnvironment.ContentRootPath, $"..{Path.DirectorySeparatorChar}AElf.PortAll.Application.Contracts"));
+                    options.FileSets.ReplaceEmbeddedByPhysical<PortAllDomainSharedModule>(
+                        Path.Combine(hostingEnvironment.ContentRootPath,
+                            $"..{Path.DirectorySeparatorChar}AElf.PortAll.Domain"));
+                    options.FileSets.ReplaceEmbeddedByPhysical<PortAllApplicationContractsModule>(
+                        Path.Combine(hostingEnvironment.ContentRootPath,
+                            $"..{Path.DirectorySeparatorChar}AElf.PortAll.Application.Contracts"));
                     options.FileSets.ReplaceEmbeddedByPhysical<PortAllWebModule>(hostingEnvironment.ContentRootPath);
                 });
             }
@@ -186,10 +174,7 @@ namespace AElf.PortAll.Web
                 options.MenuContributors.Add(new PortAllMenuContributor(configuration));
             });
 
-            Configure<AbpToolbarOptions>(options =>
-            {
-                options.Contributors.Add(new PortAllToolbarContributor());
-            });
+            Configure<AbpToolbarOptions>(options => { options.Contributors.Add(new PortAllToolbarContributor()); });
         }
 
         private void ConfigureSwaggerServices(IServiceCollection services)
@@ -239,18 +224,9 @@ namespace AElf.PortAll.Web
             app.UseStaticFiles();
             app.UseRouting();
             app.UseAuthentication();
-
-            if (MultiTenancyConsts.IsEnabled)
-            {
-                app.UseMultiTenancy();
-            }
-
             app.UseAuthorization();
             app.UseSwagger();
-            app.UseAbpSwaggerUI(options =>
-            {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "PortAll API");
-            });
+            app.UseAbpSwaggerUI(options => { options.SwaggerEndpoint("/swagger/v1/swagger.json", "PortAll API"); });
             app.UseAbpSerilogEnrichers();
             app.UseConfiguredEndpoints();
         }

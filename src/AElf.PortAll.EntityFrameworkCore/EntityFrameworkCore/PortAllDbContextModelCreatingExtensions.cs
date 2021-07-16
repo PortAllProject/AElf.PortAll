@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AElf.PortAll.Queries;
+using Microsoft.EntityFrameworkCore;
 using Volo.Abp;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace AElf.PortAll.EntityFrameworkCore
 {
@@ -9,14 +11,23 @@ namespace AElf.PortAll.EntityFrameworkCore
         {
             Check.NotNull(builder, nameof(builder));
 
-            /* Configure your own tables/entities inside here */
-
-            //builder.Entity<YourEntity>(b =>
-            //{
-            //    b.ToTable(PortAllConsts.DbTablePrefix + "YourEntities", PortAllConsts.DbSchema);
-            //    b.ConfigureByConvention(); //auto configure for the base class props
-            //    //...
-            //});
+            builder.Entity<Query>(b =>
+            {
+                b.ToTable($"{PortAllConsts.DbTablePrefix}Query", PortAllConsts.DbSchema);
+                b.ConfigureByConvention();
+                
+                // Config Query properties.
+                b.Property(q => q.QueryTransactionId).IsRequired().HasMaxLength(PortAllConsts.TransactionIdLength);
+                b.Property(q => q.Payment).IsRequired();
+                b.Property(q => q.AggregateThreshold).IsRequired();
+                b.Property(q => q.CallbackContractAddress).IsRequired();
+                b.Property(q => q.CallbackMethodName).IsRequired();
+                b.Property(q => q.ExpirationTimestamp).IsRequired();
+                b.Property(q => q.QueryId).IsRequired();
+                b.Property(q => q.QueryTitle).IsRequired();
+                b.Property(q => q.QuerySender).IsRequired();
+                b.Property(q => q.DesignatedNodeList).IsRequired();
+            });
         }
     }
 }

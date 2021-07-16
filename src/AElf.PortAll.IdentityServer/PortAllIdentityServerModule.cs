@@ -9,7 +9,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using AElf.PortAll.EntityFrameworkCore;
 using AElf.PortAll.Localization;
-using AElf.PortAll.MultiTenancy;
 using StackExchange.Redis;
 using Volo.Abp;
 using Volo.Abp.Account;
@@ -170,12 +169,6 @@ namespace AElf.PortAll
             app.UseRouting();
             app.UseCors(DefaultCorsPolicyName);
             app.UseAuthentication();
-
-            if (MultiTenancyConsts.IsEnabled)
-            {
-                app.UseMultiTenancy();
-            }
-
             app.UseUnitOfWork();
             app.UseIdentityServer();
             app.UseAuthorization();
